@@ -17,6 +17,9 @@
 		AAAEF4E3285C23D400AFBA04 /* NewsListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEF4E2285C23D400AFBA04 /* NewsListTests.m */; };
 		AAAEF4ED285C23D400AFBA04 /* NewsListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEF4EC285C23D400AFBA04 /* NewsListUITests.m */; };
 		AAAEF4EF285C23D400AFBA04 /* NewsListUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEF4EE285C23D400AFBA04 /* NewsListUITestsLaunchTests.m */; };
+		AAAEF4FD285C5EB100AFBA04 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEF4FC285C5EB100AFBA04 /* TableViewCell.m */; };
+		AAAEF500285C707900AFBA04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEF4FF285C707900AFBA04 /* DetailViewController.m */; };
+		D2D627E4DCA62558F49D64BC /* libPods-NewsList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAE550E1666F5BE11D8573F /* libPods-NewsList.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7FA60D5A3B5AA8938F68EB /* Pods-NewsList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsList.debug.xcconfig"; path = "Target Support Files/Pods-NewsList/Pods-NewsList.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAE550E1666F5BE11D8573F /* libPods-NewsList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A482ED66818DD203042E52C6 /* Pods-NewsList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsList.release.xcconfig"; path = "Target Support Files/Pods-NewsList/Pods-NewsList.release.xcconfig"; sourceTree = "<group>"; };
 		AAAEF4C3285C23D200AFBA04 /* NewsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAEF4C6285C23D200AFBA04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAAEF4C7285C23D200AFBA04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		AAAEF4E8285C23D400AFBA04 /* NewsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAEF4EC285C23D400AFBA04 /* NewsListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListUITests.m; sourceTree = "<group>"; };
 		AAAEF4EE285C23D400AFBA04 /* NewsListUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListUITestsLaunchTests.m; sourceTree = "<group>"; };
+		AAAEF4FB285C5EB100AFBA04 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		AAAEF4FC285C5EB100AFBA04 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		AAAEF4FE285C707900AFBA04 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AAAEF4FF285C707900AFBA04 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D627E4DCA62558F49D64BC /* libPods-NewsList.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03CC9CA645655A567E9CF963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EAE550E1666F5BE11D8573F /* libPods-NewsList.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64FAE96229BB98853ED28DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D7FA60D5A3B5AA8938F68EB /* Pods-NewsList.debug.xcconfig */,
+				A482ED66818DD203042E52C6 /* Pods-NewsList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AAAEF4BA285C23D200AFBA04 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +116,8 @@
 				AAAEF4E1285C23D400AFBA04 /* NewsListTests */,
 				AAAEF4EB285C23D400AFBA04 /* NewsListUITests */,
 				AAAEF4C4285C23D200AFBA04 /* Products */,
+				64FAE96229BB98853ED28DD1 /* Pods */,
+				03CC9CA645655A567E9CF963 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +138,12 @@
 				AAAEF4C7285C23D200AFBA04 /* AppDelegate.m */,
 				AAAEF4C9285C23D200AFBA04 /* SceneDelegate.h */,
 				AAAEF4CA285C23D200AFBA04 /* SceneDelegate.m */,
+				AAAEF4FE285C707900AFBA04 /* DetailViewController.h */,
+				AAAEF4FF285C707900AFBA04 /* DetailViewController.m */,
 				AAAEF4CC285C23D200AFBA04 /* ViewController.h */,
 				AAAEF4CD285C23D200AFBA04 /* ViewController.m */,
+				AAAEF4FB285C5EB100AFBA04 /* TableViewCell.h */,
+				AAAEF4FC285C5EB100AFBA04 /* TableViewCell.m */,
 				AAAEF4CF285C23D200AFBA04 /* Main.storyboard */,
 				AAAEF4D2285C23D400AFBA04 /* Assets.xcassets */,
 				AAAEF4D4285C23D400AFBA04 /* LaunchScreen.storyboard */,
@@ -143,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAAEF4F2285C23D400AFBA04 /* Build configuration list for PBXNativeTarget "NewsList" */;
 			buildPhases = (
+				FF7FF5715C59A2D3813A3F57 /* [CP] Check Pods Manifest.lock */,
 				AAAEF4BF285C23D200AFBA04 /* Sources */,
 				AAAEF4C0285C23D200AFBA04 /* Frameworks */,
 				AAAEF4C1285C23D200AFBA04 /* Resources */,
@@ -261,6 +296,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FF7FF5715C59A2D3813A3F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAAEF4BF285C23D200AFBA04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,7 +329,9 @@
 				AAAEF4CE285C23D200AFBA04 /* ViewController.m in Sources */,
 				AAAEF4C8285C23D200AFBA04 /* AppDelegate.m in Sources */,
 				AAAEF4D9285C23D400AFBA04 /* main.m in Sources */,
+				AAAEF4FD285C5EB100AFBA04 /* TableViewCell.m in Sources */,
 				AAAEF4CB285C23D200AFBA04 /* SceneDelegate.m in Sources */,
+				AAAEF500285C707900AFBA04 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +499,7 @@
 		};
 		AAAEF4F3285C23D400AFBA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7FA60D5A3B5AA8938F68EB /* Pods-NewsList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +527,7 @@
 		};
 		AAAEF4F4285C23D400AFBA04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A482ED66818DD203042E52C6 /* Pods-NewsList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

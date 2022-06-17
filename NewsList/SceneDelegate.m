@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "ViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,6 +16,27 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+    
+    ViewController *vc = [[ViewController alloc] init];
+
+    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:vc];
+    navVc.navigationBar.barTintColor = [UIColor colorWithRed:43/255 green:129/255 blue:1 alpha:1];
+    navVc.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    navVc.navigationBar.translucent = NO;
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance *appperance = [[UINavigationBarAppearance alloc]init];
+        appperance.backgroundColor = [UIColor colorWithRed:43/255 green:129/255 blue:1 alpha:1];
+        [appperance setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        navVc.navigationBar.standardAppearance = appperance;
+        navVc.navigationBar.scrollEdgeAppearance = appperance;
+    }
+    
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+    self.window.frame = windowScene.coordinateSpace.bounds;
+    self.window.rootViewController = navVc;
+    [self.window makeKeyAndVisible];
+    
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
